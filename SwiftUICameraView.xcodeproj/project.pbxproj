@@ -11,6 +11,12 @@
 		5F6C77A82968192300B046BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77A72968192300B046BB /* ContentView.swift */; };
 		5F6C77AA2968192600B046BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C77A92968192600B046BB /* Assets.xcassets */; };
 		5F6C77AD2968192600B046BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6C77AC2968192600B046BB /* Preview Assets.xcassets */; };
+		5F6C77B52968339100B046BB /* CameraFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77B42968339100B046BB /* CameraFrameView.swift */; };
+		5F6C77B82968376F00B046BB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77B72968376F00B046BB /* CameraManager.swift */; };
+		5F6C77BB2968396900B046BB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77BA2968396900B046BB /* ErrorView.swift */; };
+		5F6C77BE296839D800B046BB /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77BD296839D800B046BB /* CGImageExtension.swift */; };
+		5F6C77C02968640200B046BB /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77BF2968640200B046BB /* FrameManager.swift */; };
+		5F6C77C22968661800B046BB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77C12968661800B046BB /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		5F6C77A72968192300B046BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F6C77A92968192600B046BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6C77AC2968192600B046BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F6C77B42968339100B046BB /* CameraFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameView.swift; sourceTree = "<group>"; };
+		5F6C77B72968376F00B046BB /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		5F6C77BA2968396900B046BB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5F6C77BD296839D800B046BB /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		5F6C77BF2968640200B046BB /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		5F6C77C12968661800B046BB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,13 @@
 		5F6C77A42968192300B046BB /* SwiftUICameraView */ = {
 			isa = PBXGroup;
 			children = (
+				5F6C77BC296839C500B046BB /* Extensions */,
+				5F6C77B92968395A00B046BB /* Components */,
+				5F6C77B62968375E00B046BB /* Managers */,
+				5F6C77B32968337A00B046BB /* Views */,
 				5F6C77A52968192300B046BB /* SwiftUICameraViewApp.swift */,
 				5F6C77A72968192300B046BB /* ContentView.swift */,
+				5F6C77C12968661800B046BB /* ContentViewModel.swift */,
 				5F6C77A92968192600B046BB /* Assets.xcassets */,
 				5F6C77AB2968192600B046BB /* Preview Content */,
 			);
@@ -65,6 +82,39 @@
 				5F6C77AC2968192600B046BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F6C77B32968337A00B046BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C77B42968339100B046BB /* CameraFrameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F6C77B62968375E00B046BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C77B72968376F00B046BB /* CameraManager.swift */,
+				5F6C77BF2968640200B046BB /* FrameManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5F6C77B92968395A00B046BB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C77BA2968396900B046BB /* ErrorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5F6C77BC296839C500B046BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C77BD296839D800B046BB /* CGImageExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6C77C22968661800B046BB /* ContentViewModel.swift in Sources */,
+				5F6C77BB2968396900B046BB /* ErrorView.swift in Sources */,
+				5F6C77BE296839D800B046BB /* CGImageExtension.swift in Sources */,
+				5F6C77B52968339100B046BB /* CameraFrameView.swift in Sources */,
 				5F6C77A82968192300B046BB /* ContentView.swift in Sources */,
+				5F6C77B82968376F00B046BB /* CameraManager.swift in Sources */,
+				5F6C77C02968640200B046BB /* FrameManager.swift in Sources */,
 				5F6C77A62968192300B046BB /* SwiftUICameraViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +326,13 @@
 				DEVELOPMENT_TEAM = B7FU9C79C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It will use Camera for displaying";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +357,13 @@
 				DEVELOPMENT_TEAM = B7FU9C79C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "It will use Camera for displaying";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
