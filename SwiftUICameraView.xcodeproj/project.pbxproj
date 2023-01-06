@@ -17,6 +17,7 @@
 		5F6C77BE296839D800B046BB /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77BD296839D800B046BB /* CGImageExtension.swift */; };
 		5F6C77C02968640200B046BB /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77BF2968640200B046BB /* FrameManager.swift */; };
 		5F6C77C22968661800B046BB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77C12968661800B046BB /* ContentViewModel.swift */; };
+		5F6C77C429686F1A00B046BB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6C77C329686F1A00B046BB /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5F6C77BD296839D800B046BB /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
 		5F6C77BF2968640200B046BB /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
 		5F6C77C12968661800B046BB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5F6C77C329686F1A00B046BB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				5F6C77BA2968396900B046BB /* ErrorView.swift */,
+				5F6C77C329686F1A00B046BB /* ToggleButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				5F6C77BB2968396900B046BB /* ErrorView.swift in Sources */,
 				5F6C77BE296839D800B046BB /* CGImageExtension.swift in Sources */,
 				5F6C77B52968339100B046BB /* CameraFrameView.swift in Sources */,
+				5F6C77C429686F1A00B046BB /* ToggleButton.swift in Sources */,
 				5F6C77A82968192300B046BB /* ContentView.swift in Sources */,
 				5F6C77B82968376F00B046BB /* CameraManager.swift in Sources */,
 				5F6C77C02968640200B046BB /* FrameManager.swift in Sources */,

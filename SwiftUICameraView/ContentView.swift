@@ -17,6 +17,22 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             ErrorView(error: viewModel.error)
+            
+            filters
+        }
+    }
+}
+
+extension ContentView {
+    var filters: some View {
+        VStack {
+            Spacer()
+            HStack {
+                ToggleButton(selected: $viewModel.comicFilter, label: "🤣")
+                ToggleButton(selected: $viewModel.monoFilter, label: "🌚")
+                ToggleButton(selected: $viewModel.crystalFilter, label: "🔮")
+            }
+            .padding()
         }
     }
 }
