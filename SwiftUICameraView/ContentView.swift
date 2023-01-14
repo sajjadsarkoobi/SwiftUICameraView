@@ -9,30 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = ContentViewModel()
+    enum Path {
+        case combine
+        case avPreview
+    }
     
     var body: some View {
-        ZStack {
-            CameraFrameView(image: viewModel.frame)
-                .ignoresSafeArea()
-            
-            ErrorView(error: viewModel.error)
-            
-            filters
-        }
-    }
-}
-
-extension ContentView {
-    var filters: some View {
-        VStack {
-            Spacer()
-            HStack {
-                ToggleButton(selected: $viewModel.comicFilter, label: "🤣")
-                ToggleButton(selected: $viewModel.monoFilter, label: "🌚")
-                ToggleButton(selected: $viewModel.crystalFilter, label: "🔮")
+        NavigationStack {
+            VStack(spacing: 20) {
+             
+                NavigationLink(value: Path.combine) {
+                    Text("Combine Camera View")
+                        .font(.headline)
+                }
+                .buttonStyle(.borderedProminent)
+                
+                NavigationLink(value: Path.avPreview) {
+                    Text("AVPreview Camera View")
+                        .font(.headline)
+                }
+                .buttonStyle(.borderedProminent)
+                
             }
-            .padding()
+            .navigationTitle("SwiftUI Camera View")
+            .navigationDestination(for: Path.self) { path in
+                switch path {
+                case .combine:
+                    CombineCameraView()
+                        .navigationTitle("Combine mode")
+                    
+                case .avPreview:
+                    AVCameraView()
+                        .navigationTitle("AVPreview mode")
+                }
+            }
         }
     }
 }

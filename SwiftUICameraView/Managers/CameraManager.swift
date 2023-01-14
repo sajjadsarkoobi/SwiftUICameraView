@@ -21,7 +21,7 @@ class CameraManager: ObservableObject {
     
     @Published var error: CameraError?
     
-    let session = AVCaptureSession()
+    @Published var session = AVCaptureSession()
     private let sessionQueue = DispatchQueue(label: "com.sajjad.cameraSessionQ")
     private let videoOutput = AVCaptureVideoDataOutput()
     private var status: Status = .unconfigured
@@ -35,6 +35,24 @@ class CameraManager: ObservableObject {
         sessionQueue.async {
             self.configCaptureSession()
             self.session.startRunning()
+            //self.controllSession(start: true)
+        }
+    }
+    
+    func controllSession(start: Bool) {
+        guard status == .configured else {
+            self.config()
+            return
+        }
+        
+        sessionQueue.async {
+            if start {
+                if !self.session.isRunning {
+                    self.session.startRunning()
+                }
+            } else {
+                self.session.stopRunning()
+            }
         }
     }
     
@@ -83,6 +101,9 @@ class CameraManager: ObservableObject {
         defer {
             session.commitConfiguration()
         }
+        
+        //Seting Session Preset
+        session.sessionPreset = .hd1280x720
         
         //Preparing The device as input
         let device = AVCaptureDevice.default(.builtInDualCamera,
