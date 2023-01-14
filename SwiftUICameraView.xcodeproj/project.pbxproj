@@ -77,7 +77,6 @@
 				5F6C77B32968337A00B046BB /* Views */,
 				5F6C77A52968192300B046BB /* SwiftUICameraViewApp.swift */,
 				5F6C77A72968192300B046BB /* ContentView.swift */,
-				5F6C77C12968661800B046BB /* CombineCameraViewModel.swift */,
 				5F6C77A92968192600B046BB /* Assets.xcassets */,
 				5F6C77AB2968192600B046BB /* Preview Content */,
 			);
@@ -130,6 +129,7 @@
 		5F8152C82972F84900CB03EC /* CombineCameraViewMode */ = {
 			isa = PBXGroup;
 			children = (
+				5F6C77C12968661800B046BB /* CombineCameraViewModel.swift */,
 				5F6C77B42968339100B046BB /* CameraFrameView.swift */,
 				5F8152C22972ECF800CB03EC /* CombineCameraView.swift */,
 			);
