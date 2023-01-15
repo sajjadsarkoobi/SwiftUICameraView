@@ -1,10 +1,18 @@
-# Camera View - SwiftUI - Combine
+# Camera View - SwiftUI | Combine & AVKit
 Creating Camera View based on Combine &amp; SwiftUI
 
-Presenting the camera view and accessing each frame have never been so much easier rather than this.
+Presenting the camera view and accessing each frame have never been so much easier rather than this. But which is more efficient and right for your use cases? 
+ - Using Combine and SwiftUI 
+ - AVKit with AVCaptureVideoPreviewLayer
 
+### Check it out on my Youtube Channel [SwiftAcademy](https://youtu.be/_q_HFGfhpEI):
+<div align="left">
+      <a href="https://youtu.be/VqGpdXfwjuU">
+         <img src="https://img.youtube.com/vi/VqGpdXfwjuU/0.jpg" style="width:640;">
+      </a>
+</div>
 
-
+### Preview
 
 ![Preview](https://github.com/sajjadsarkoobi/SwiftUICameraView/blob/main/SwiftUICameraView/Assets.xcassets/preview.dataset/preview.gif)
 
