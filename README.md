@@ -5,7 +5,7 @@ Presenting the camera view and accessing each frame have never been so much easi
  - Using Combine and SwiftUI 
  - AVKit with AVCaptureVideoPreviewLayer
 
-### Check it out on my Youtube Channel [SwiftAcademy](https://youtu.be/_q_HFGfhpEI):
+### Check it out on my Youtube Channel [SwiftAcademy](https://youtu.be/VqGpdXfwjuU):
 <div align="left">
       <a href="https://youtu.be/VqGpdXfwjuU">
          <img src="https://img.youtube.com/vi/VqGpdXfwjuU/0.jpg" style="width:640;">
